@@ -7,21 +7,27 @@ import { AppComponent } from './app.component';
 import { EmployeeCreateComponent } from './components/employee-create/employee-create.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
+import { LoginComponent } from './components//login/login.component';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ApiService } from './service/api.service';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeCreateComponent,
     EmployeeListComponent,
-    EmployeeEditComponent
+    EmployeeEditComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule

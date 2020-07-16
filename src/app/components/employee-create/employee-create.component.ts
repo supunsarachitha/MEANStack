@@ -19,7 +19,9 @@ export class EmployeeCreateComponent implements OnInit {
     private router: Router,
     private ngZone: NgZone,
     private apiService: ApiService
-  ) { 
+  ) 
+  
+  { 
     this.mainForm();
   }
 
